@@ -206,9 +206,6 @@ export default {};
 
           span {
             font-size: 14px;
-
-
-
             font-family: 'Unbounded';
             color: rgba(66, 63, 63, 1);
 
