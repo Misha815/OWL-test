@@ -1,30 +1,25 @@
 <template>
   <div class="header">
     <div class="header__inner">
+
       <div class="breadcrumb-navigation">
         <ul class="breadcrumb-navigation__inner">
-          <li><span class="new">ГЛАВНАЯ</span></li>
-          <li><span>НОВОСТИ</span></li>
+          <li><span class="new">главная</span></li>
+          <li><span>новости</span></li>
           <li>
             <span>Средняя ставка по ипотеке в России превысила 8%</span>
           </li>
         </ul>
       </div>
-      <div class="subject">
-        <div class="subject__inner">
-          <div class="media">
-            <span>в СМИ</span>
-          </div>
-          <div class="sale">
-            <img src="assets\images\icon-glyphs (1).svg" alt="" /><span
-              >Акция</span
-            >
-          </div>
-        </div>
+      <div class="subject-container">
+        <subject />
       </div>
+
       <div class="h1">
         <div class="h1__inner">
-          <span>Средняя ставка по ипотеке в России превысила 8%</span>
+          <span>
+            <h1>Средняя ставка по ипотеке в России превысила 8%</h1>
+          </span>
         </div>
       </div>
       <div class="data-post">
@@ -37,83 +32,98 @@
 </template>
 
 <script>
-export default {};
+import subject from './subject.vue';
+export default {
+  components: { subject },
+};
 </script>
 
 <style lang="scss" scoped>
 .header {
+
   width: 1056px;
   margin: 0 auto;
+
   .header__inner {
-    margin: 0 auto;
+
+
+    padding-top: 84px;
+
+
+
     .breadcrumb-navigation {
+      margin-bottom: 32px;
+
       .breadcrumb-navigation__inner {
         all: unset;
         display: flex;
 
         list-style-position: inside;
+
         li {
+
+
           list-style-type: none;
           margin-left: 8px;
-          font-size: 16px;
+
+          span {
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          letter-spacing: 4%;
+          text-transform: uppercase;
+
 
           &::after {
+
             content: " •";
           }
+
           &:last-of-type::after {
             content: none;
             margin-left: 0px;
+
+          }
+
+          &:last-child {
+            color: #423f3f94;
           }
         }
       }
     }
-    .subject {
-      .subject__inner {
-        display: flex;
 
-        .media {
-          margin-right: 8px;
-          border-radius: 20px;
-          text-align: center;
-          width: 69px;
-          height: 26px;
-          border: 1px solid rgba(91, 68, 129, 1);
+    .subject-container {
 
-          span {
-            color: rgba(91, 68, 129, 1);
-          }
-        }
-        .sale {
-          border: 1px solid rgba(202, 34, 80, 1);
-          text-align: center;
-          border-radius: 20px;
-          width: 88px;
-          height: 26px;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
 
-          img {
-          }
-          span {
-            color: rgba(202, 34, 80, 1);
-            &::before {
-            }
-          }
-        }
-      }
+      margin-bottom: 32px;
     }
+
     .h1 {
+      margin-bottom: 16px;
+
       .h1__inner {
         span {
-          font-size: 48px;
-          color: rgba(66, 63, 63, 1);
-          max-width: 1056px;
-          display: flex;
+          h1 {
+
+            font-size: 48px;
+            max-width: 1056px;
+            display: flex;
+            font-family: 'Unbounded';
+            color: rgba(66, 63, 63, 1);
+
+            font-weight: bolder;
+
+          }
+
         }
       }
     }
+
     .data-post {
+      margin-bottom: 32px;
+
       .data-post__inner {
         span {
           color: rgba(207, 207, 207, 1);
@@ -125,88 +135,114 @@ export default {};
     }
   }
 }
+
 @media (width: 375px) {
   .header {
+
+    max-width: 352px;
+
+
     .header__inner {
+
+      padding-top: 18px;
+
+
       .breadcrumb-navigation {
+        width: 352px;
+        height: 48px;
+
+        margin: 0 auto;
+
+
         .breadcrumb-navigation__inner {
-          all: unset;
+
+
+
           display: flex;
+          white-space: nowrap;
+          overflow: hidden;
 
-          width: 375px;
-
-          list-style-position: inside;
 
           li {
+            text-transform: uppercase;
+
             list-style-type: none;
             margin-left: 8px;
             font-size: 12px;
-            overflow: hidden;
-            .new {
-              display: none;
+            font-weight: bolder;
+
+            span {
+              margin: 0 auto;
+              font-size: 12px;
+              font-weight: 500;
             }
+
+            letter-spacing: 4%;
+            text-transform: uppercase;
+
             &::after {
               content: " •";
             }
-            &:first-of-type::after {
+
+            &:first-child {
+              overflow: hidden;
+            }
+
+            &:last-of-type::after {
               content: none;
               margin-left: 0px;
+
+            }
+
+            &:last-child {
+              color: #423f3f94;
             }
           }
         }
       }
-      .subject {
-        .subject__inner {
-          display: flex;
 
-          .media {
-            margin-right: 8px;
-            border-radius: 20px;
-            text-align: center;
-            width: 69px;
-            height: 26px;
-            border: 1px solid rgba(91, 68, 129, 1);
-
-            span {
-              color: rgba(91, 68, 129, 1);
-            }
-          }
-          .sale {
-            border: 1px solid rgba(202, 34, 80, 1);
-            text-align: center;
-            border-radius: 20px;
-            width: 88px;
-            height: 26px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            img {
-            }
-            span {
-              color: rgba(202, 34, 80, 1);
-              &::before {
-              }
-            }
-          }
-        }
+      .subject-container {
+        margin-bottom: 16px;
+        display: flex;
+        margin-left: 16px;
       }
+
       .h1 {
-        .h1__inner {
-          span {
-            font-size: 24px;
-            color: rgba(66, 63, 63, 1);
-            max-width: 375px;
+        margin-left: 16px;
+        margin-bottom: 16px;
 
-            display: flex;
+
+        .h1__inner {
+
+
+          span {
+
+
+            h1 {
+
+              font-size: 24px;
+              max-width: 352px;
+
+              letter-spacing: 0%;
+              font-family: 'Unbounded';
+              color: rgba(66, 63, 63, 1);
+
+              font-weight: bolder;
+
+            }
+
           }
         }
       }
+
       .data-post {
+        margin-left: 16px;
+        margin-bottom: 32px;
+
         .data-post__inner {
           span {
             color: rgba(207, 207, 207, 1);
-            font-size: 16px;
+            font-size: 14px;
             text-decoration: underline rgba(207, 207, 207, 1);
             text-underline-offset: 4px;
           }

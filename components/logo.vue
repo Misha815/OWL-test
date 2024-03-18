@@ -13,13 +13,16 @@ export default {};
   width: 1586px;
   height: 100px;
 }
-@media (max-width: 400px) {
+
+@media (max-width: 375px) {
   .logo {
-    background-image: none;
-    background-image: url("~/assets/mob-top-menu.png");
-    margin: 0 auto;
-    width: 360px;
-    height: 54px;
+
+
+    background: no-repeat url("~/assets/mob-top-menu.png");
+
+
+    max-width: 357px;
+    height: 62px;
   }
 }
 </style>
