@@ -14,7 +14,7 @@
       </div>
 
       <div class="content-image">
-        <img src="assets\images\content.png" alt="content" />
+        <img src="assets\content.png" alt="content" />
       </div>
       <div class="news-dynamic-text">
         <p>
@@ -55,6 +55,7 @@ export default {};
 <style lang="scss" scoped>
 .content {
   .content__inner {
+
     width: 1056px;
     margin: 0 auto;
 

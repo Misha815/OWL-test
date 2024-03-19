@@ -1,5 +1,8 @@
 <template>
-  <div class="logo"></div>
+  <div class="logo-container">
+    <div class="logo"></div>
+  </div>
+
 </template>
 
 <script>
@@ -12,17 +15,26 @@ export default {};
   margin: 0 auto;
   width: 1586px;
   height: 100px;
+
+
 }
 
 @media (max-width: 375px) {
-  .logo {
+  .logo-container {
+    position: relative;
+
+    width: 375px;
+    padding-left: 8px;
+
+    .logo {
+      background: no-repeat url("~/assets/mob-top-menu.png");
 
 
-    background: no-repeat url("~/assets/mob-top-menu.png");
-
-
-    max-width: 357px;
-    height: 62px;
+      height: 62px;
+      position: fixed;
+      background-color: rgba(128, 120, 120, 0.98);
+      top: 0px;
+    }
   }
 }
 </style>

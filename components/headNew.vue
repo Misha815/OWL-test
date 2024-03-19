@@ -2,15 +2,7 @@
   <div class="header">
     <div class="header__inner">
 
-      <div class="breadcrumb-navigation">
-        <ul class="breadcrumb-navigation__inner">
-          <li><span class="new">главная</span></li>
-          <li><span>новости</span></li>
-          <li>
-            <span>Средняя ставка по ипотеке в России превысила 8%</span>
-          </li>
-        </ul>
-      </div>
+
       <div class="subject-container">
         <subject />
       </div>
@@ -46,53 +38,6 @@ export default {
 
   .header__inner {
 
-
-    padding-top: 84px;
-
-
-
-    .breadcrumb-navigation {
-      margin-bottom: 32px;
-
-      .breadcrumb-navigation__inner {
-        all: unset;
-        display: flex;
-
-        list-style-position: inside;
-
-        li {
-
-
-          list-style-type: none;
-          margin-left: 8px;
-
-          span {
-            margin: 0 auto;
-            font-size: 16px;
-            font-weight: 500;
-          }
-
-          letter-spacing: 4%;
-          text-transform: uppercase;
-
-
-          &::after {
-
-            content: " •";
-          }
-
-          &:last-of-type::after {
-            content: none;
-            margin-left: 0px;
-
-          }
-
-          &:last-child {
-            color: #423f3f94;
-          }
-        }
-      }
-    }
 
     .subject-container {
 
@@ -147,59 +92,7 @@ export default {
       padding-top: 18px;
 
 
-      .breadcrumb-navigation {
-        width: 352px;
-        height: 48px;
 
-        margin: 0 auto;
-
-
-        .breadcrumb-navigation__inner {
-
-
-
-          display: flex;
-          white-space: nowrap;
-          overflow: hidden;
-
-
-          li {
-            text-transform: uppercase;
-
-            list-style-type: none;
-            margin-left: 8px;
-            font-size: 12px;
-            font-weight: bolder;
-
-            span {
-              margin: 0 auto;
-              font-size: 12px;
-              font-weight: 500;
-            }
-
-            letter-spacing: 4%;
-            text-transform: uppercase;
-
-            &::after {
-              content: " •";
-            }
-
-            &:first-child {
-              overflow: hidden;
-            }
-
-            &:last-of-type::after {
-              content: none;
-              margin-left: 0px;
-
-            }
-
-            &:last-child {
-              color: #423f3f94;
-            }
-          }
-        }
-      }
 
       .subject-container {
         margin-bottom: 16px;

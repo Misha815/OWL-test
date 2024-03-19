@@ -6,7 +6,7 @@
     <div class="rectangle">
       <div class="rectangle__inner">
         <div class="left-item">
-
+          <img src="~/assets/card-news-mobile.png" alt="">
           <div class="data"><span>06.10.2023</span></div>
         </div>
         <div class="center-item">
@@ -21,11 +21,16 @@
 
         </div>
         <div class="right-item">
-          <div class="btn-next"><a href="#"></a></div>
+
+          <div class="btn-next">
+            <a href="#"></a>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -65,6 +70,11 @@ export default {};
     .left-item {
       position: relative;
 
+      img {
+        width: 320px;
+        height: 220px;
+      }
+
       .data {
         position: absolute;
         top: 16px;
@@ -92,6 +102,7 @@ export default {};
 
       .h3 {
         height: 154px;
+        margin-top: 20px;
 
         span {
           font-size: 24px;
@@ -109,11 +120,12 @@ export default {};
       .subject-container {
         padding-bottom: 16px;
         display: flex;
-        padding-left: 16px;
+
       }
     }
 
     .right-item {
+
       .btn-next {
         width: 80px;
         height: 80px;
@@ -124,6 +136,7 @@ export default {};
         justify-content: center;
         align-items: center;
 
+
         a {
           width: 40px;
           height: 40px;
@@ -131,6 +144,7 @@ export default {};
 
           content: url("~/assets/icon-glyphs.svg");
         }
+
       }
     }
   }
@@ -141,7 +155,7 @@ export default {};
     width: 334px;
     margin: 0 auto;
     margin-bottom: 32px;
-
+    margin-left: 16px;
 
     span {
       display: flex;
@@ -155,9 +169,12 @@ export default {};
   }
 
   .rectangle {
+
     margin: 0 auto;
-    background: no-repeat url("~/assets/mask-news.png");
+    background: no-repeat url("~/assets/mask-news-mobile.png");
     width: 344px;
+    display: flex;
+    margin-left: 16px;
     padding-bottom: 128px;
 
     .rectangle__inner {
@@ -165,15 +182,22 @@ export default {};
       height: 294px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+
 
 
       .left-item {
         position: relative;
-        background: no-repeat url('~/assets/card-news-mobile.png');
+
         width: 304px;
         height: 164px;
         z-index: 4;
+
+        img {
+          margin-left: 4px;
+          margin-top: 4px;
+          width: 304px;
+          height: 164px;
+        }
 
         .data {
           position: absolute;
@@ -196,13 +220,15 @@ export default {};
       .center-item {
         width: 580px;
         height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+
+        position: relative;
 
         .h3 {
+          margin-top: 0;
+          margin-left: 12px;
           width: 288px;
           height: 48px;
+
 
           span {
             font-size: 14px;
@@ -214,26 +240,36 @@ export default {};
           }
         }
 
-        .subject-container {}
+        .subject-container {
+          position: absolute;
+          bottom: -14px;
+          left: 0px;
+          margin-left: 12px;
+        }
 
       }
 
       .right-item {
+        position: relative;
+
         .btn-next {
-          width: 80px;
-          height: 80px;
-          border-radius: 24px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 48px;
+          height: 48px;
+          border-radius: 16px;
           background-color: #ffffff;
           box-shadow: 0px 0px 12px #3e4a591f;
 
-
           a {
-            width: 40px;
-            height: 40px;
-            border-radius: 24px;
+            width: 20px;
+            height: 13px;
 
-            content: url("~/assets/icon-glyphs.svg");
+            content: url('~/assets/Vector-btn.svg');
+
           }
+
         }
       }
     }
