@@ -1,5 +1,3 @@
-![image](https://github.com/Misha815/OWL-test/assets/71971590/b4090458-0fb2-4856-92ac-93636909384e)
-![image](https://github.com/Misha815/OWL-test/assets/71971590/c5284ba3-61cb-459d-9c5f-1f709f158c3a)
-![image](https://github.com/Misha815/OWL-test/assets/71971590/8877216f-3d2d-4bb6-941a-c5dade13f079)
-
-
+![image](https://github.com/Misha815/OWL-test/assets/71971590/219ac533-840a-4dde-8112-fd924048fefd)
+![image](https://github.com/Misha815/OWL-test/assets/71971590/a7060226-3d0e-4f3f-af30-c58daa3409d4)
+![Uploading image.png…]()
